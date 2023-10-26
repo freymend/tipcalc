@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         // When the user clicks enter, format the number in USD
         amount.setOnEditorActionListener { _, _, _ ->
-            if (!amount.text.isNullOrEmpty()) {
+            if (!amount.text.isNullOrEmpty() && amount.text.toString() != ".") {
                 dollarTotal = amount.text.toString().toBigDecimal()
                 val dollarFormatted = currency.format(dollarTotal)
                 amount.setText(dollarFormatted)
