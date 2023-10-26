@@ -2,6 +2,7 @@
     <string name="app_name">Tip Calc</string>
     <string name="tip">Tip</string>
     <string name="amount">Amount</string>
+    <string name="tip_amount">Tip Amount: %s</string>
     <string-array name="service_charge_array">
         <item>10%</item>
         <item>15%</item>

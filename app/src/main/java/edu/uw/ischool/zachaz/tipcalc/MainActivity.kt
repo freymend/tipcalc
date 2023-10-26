@@ -47,8 +47,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         tipButton.setOnClickListener {
-            val total = currency.format(getTipAmount() * dollarTotal)
-            Toast.makeText(this, "Tip Amount: $total", Toast.LENGTH_SHORT).show()
+            val tipTotal = currency.format(getTipAmount() * dollarTotal)
+            val tipText = getString(R.string.tip_amount, tipTotal)
+            Toast.makeText(this, tipText, Toast.LENGTH_SHORT).show()
         }
     }
 }
